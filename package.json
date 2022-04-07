@@ -4,15 +4,19 @@
   "description": "Building a NodeJs App in AWS with 12 factors apps",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/app.js",
+    "lint": "eslint .",
+    "start": "node src/app.js",
+    "test": "mocha --recursive --exit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.10",
     "morgan": "^1.10.0",
     "stripe": "^8.211.0"
   },
